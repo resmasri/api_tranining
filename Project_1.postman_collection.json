@@ -1,0 +1,2445 @@
+{
+	"info": {
+		"_postman_id": "51ff5c9f-1009-4d7f-b3c0-1fb35af6d98f",
+		"name": "Project_1",
+		"description": "Type: REST APIs\n\nClassification: Public APIs + Secured APIs\n\nAuthorization: Bearer Access Token\n\nHow to get my bearer access token : Login to the [https://gorest.co.in/](https://gorest.co.in/) website and get your token\n\n\\# of APIs developed: 4\n\nHTTP methods used: GET, POST, PATCH, DELETE\n\nFormat of API documentation: cURL\n\nDocumentation is available at [https://gorest.co.in/](https://gorest.co.in/)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35099707",
+		"_collection_link": "https://www.postman.com/aerospace-technologist-96648043/workspace/api-test/collection/35099707-51ff5c9f-1009-4d7f-b3c0-1fb35af6d98f?action=share&source=collection_link&creator=35099707"
+	},
+	"item": [
+		{
+			"name": "NEGATIVE TC",
+			"item": [
+				{
+					"name": "UNSUPPORTED HTTP METHODS",
+					"item": [
+						{
+							"name": "LIST USERS API",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx client side error\", function () {\r",
+											"    pm.response.to.be.clientError;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=GET and is used to retrieve/read/fetch all the existing users details from the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "LIST USERS API",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx client side error\", function () {\r",
+											"    pm.response.to.be.clientError;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=GET and is used to retrieve/read/fetch all the existing users details from the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "LIST USERS API",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx client side error\", function () {\r",
+											"    pm.response.to.be.clientError;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=GET and is used to retrieve/read/fetch all the existing users details from the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx client side error\", function () {\r",
+											"    pm.response.to.be.clientError;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx client side error\", function () {\r",
+											"    pm.response.to.be.clientError;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"{{$randomFullName}}\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE USER API",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx client side error\", function () {\r",
+											"    pm.response.to.be.clientError;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"{{$randomFirstName}}\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"inactive\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users/6930583",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users",
+										"6930583"
+									]
+								},
+								"description": "**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE USER API",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx client side error\", function () {\r",
+											"    pm.response.to.be.clientError;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users/6921378",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users",
+										"6921378"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=DELETE and is used to delete existing user details in the server/database.  \n**  \nExpected Result:**\n\n- Verify if response code received from server is 204 No Content\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is not received from server"
+							},
+							"response": []
+						}
+					],
+					"description": "Test the API with an invalid http method ; exp response code: 4xx client side error"
+				},
+				{
+					"name": "BROKEND ENDPOINTS TESTING",
+					"item": [
+						{
+							"name": "LIST USERS API",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"url": {
+									"raw": "https://gorest.co.in/private/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"private",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=GET and is used to retrieve/read/fetch all the existing users details from the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Comcast\",\r\n    \"gender\": \"female\",\r\n    \"email\": \"info2@comcast.com\",\r\n    \"status\": \"inactive\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/private/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"private",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE USER API",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Comcast-IT Company\",\r\n    \"email\": \"info3@comcast.com\",\r\n    \"status\": \"inactive\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/private/v2/users/6921366",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"private",
+										"v2",
+										"users",
+										"6921366"
+									]
+								},
+								"description": "**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE USER API",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"url": {
+									"raw": "https://gorest.co.in/private/v2/users/6921378",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"private",
+										"v2",
+										"users",
+										"6921378"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=DELETE and is used to delete existing user details in the server/database.  \n**  \nExpected Result:**\n\n- Verify if response code received from server is 204 No Content\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is not received from server"
+							},
+							"response": []
+						},
+						{
+							"name": "LIST USERS API",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"url": {
+									"raw": "https://gorest.co.in/public/v1/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v1",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=GET and is used to retrieve/read/fetch all the existing users details from the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Comcast\",\r\n    \"gender\": \"female\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"inactive\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v1/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v1",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE USER API",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Comcast-IT Company\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"inactive\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v1/users/6930462",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v1",
+										"users",
+										"6930462"
+									]
+								},
+								"description": "**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE USER API",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"url": {
+									"raw": "https://gorest.co.in/public/v1/users/6930440",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v1",
+										"users",
+										"6930440"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=DELETE and is used to delete existing user details in the server/database.  \n**  \nExpected Result:**\n\n- Verify if response code received from server is 204 No Content\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is not received from server"
+							},
+							"response": []
+						}
+					],
+					"description": "Test the API with an invalid/incorrect/incomplete endPoint ; exp response code: 4xx client side error"
+				},
+				{
+					"name": "PAYLOAD TAMPERING TESTING",
+					"item": [
+						{
+							"name": "CREATE USER API-INVALID GENDER",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Comcast\",\r\n    \"gender\": \"others\",\r\n    \"email\": \"info2@comcast.com\",\r\n    \"status\": \"inactive\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API-INVALID STATUS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Comcast\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"info2@comcast.com\",\r\n    \"status\": \"yes\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API-INVALID DATA TYPE",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"1234%^&*()\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API-INVALID DATA LENGTH",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Prethiba Krithiga Prasanna Ganapathy Azhik Sudhakaran Suriya Sathvika Gomathi Prethiba Krithiga Prasanna Ganapathy Azhik Sudhakaran Suriya Sathvika Gomathi\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API-MISSING PAYLOAD FIELDS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Prethiba\",\r\n//    \"gender\": \"female\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API-MISSING PAYLOAD FIELDS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Prethiba\",\r\n    \"gender\": \"female\",\r\n    \"email\": \"{{$randomEmail}}\"\r\n//    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API-MISSING PAYLOAD FIELDS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n//    \"name\": \"Prethiba\",\r\n    \"gender\": \"female\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API-MISSING PAYLOAD FIELDS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Prethiba\",\r\n    \"gender\": \"female\",\r\n//    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "CREATE USER API-NEW PAYLOAD FIELDS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Prethiba\",\r\n    \"gender\": \"female\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\",\r\n    \"mobile\":\"9999988888\"       // added this new field which is against API requirement\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users"
+									]
+								},
+								"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE USER API-EMPTY STATUS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Comcast-IT Company\",\r\n    \"email\": \"info3@comcast.com\",\r\n    \"status\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users/6930682",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users",
+										"6930682"
+									]
+								},
+								"description": "**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE USER API-EMPTY NAME",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"\",\r\n    \"email\": \"info3@comcast.com\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users/6930682",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users",
+										"6930682"
+									]
+								},
+								"description": "**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE USER API-EMPTY EMAIL",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Comcast\",\r\n    \"email\": \"\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users/6930682",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users",
+										"6930682"
+									]
+								},
+								"description": "**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE USER API-INVALID DATA LENGTH",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast Comcast\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users/6930682",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users",
+										"6930682"
+									]
+								},
+								"description": "**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE USER API-INVALID DATA TYPE",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"0987654321!@#$%^&*()_+\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users/6930682",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users",
+										"6930682"
+									]
+								},
+								"description": "**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						},
+						{
+							"name": "UPDATE USER API-NEW PAYLOAD FIELDS",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify if response code is 4xx or 5xx error\", function () {\r",
+											"    pm.response.to.be.error;\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer {{cAccessToken}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"0987654321!@#$%^&*()_+\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\",\r\n    \"mobile\" :\"9898989898\"  // new payload field which is added\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://gorest.co.in/public/v2/users/6930682",
+									"protocol": "https",
+									"host": [
+										"gorest",
+										"co",
+										"in"
+									],
+									"path": [
+										"public",
+										"v2",
+										"users",
+										"6930682"
+									]
+								},
+								"description": "**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+							},
+							"response": []
+						}
+					],
+					"description": "Test the API with an invalid/incorrect/incomplete payload (request body) ; exp response code: 4xx client side error ;\n\n\\-> invalid gender  \n\\-> invalid status  \n\\-> invalid data type  \n\\-> invalid data length  \n\\-> missing payload fields  \n\\-> new payload fields  \n\\-> empty payload fields"
+				}
+			],
+			"description": "This folder consists of negative test cases"
+		},
+		{
+			"name": "E2E API AUTOMATION",
+			"item": [
+				{
+					"name": "CREATE USER",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify if response code is 201 Created\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"    pm.response.to.have.status(\"Created\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response time < 5 seconds\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body is received from server\", function () {\r",
+									"    pm.response.to.have.body();\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body is received in JSON format\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\", \"application/json; charset=utf-8\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body contains fields such as id, name, email, gender, status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"id\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"email\")\r",
+									"    pm.expect(pm.response.text()).to.include(\"gender\")\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\")\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if gender is either male or female\", function () {\r",
+									"    pm.expect(pm.response.json().gender).to.be.oneOf([\"male\", \"female\"]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if status is active or inactive\", function () {\r",
+									"    pm.expect(pm.response.json().status).to.be.oneOf([\"active\", \"inactive\"]);\r",
+									"});\r",
+									"\r",
+									"console.log(\"The data type for id field is \"+typeof(pm.response.json().id));\r",
+									"console.log(\"The data type for name field is \"+typeof(pm.response.json().name));\r",
+									"console.log(\"The data type for status field is \"+typeof(pm.response.json().status));\r",
+									"console.log(\"The data type for gender field is \"+typeof(pm.response.json().gender));\r",
+									"console.log(\"The data type for email field is \"+typeof(pm.response.json().email));\r",
+									"\r",
+									"// API CHAINING CODE\r",
+									"\r",
+									"var jsonBody = pm.response.json();\r",
+									"var extractedID = jsonBody.id;\r",
+									"pm.globals.set(\"globalID\", extractedID);\r",
+									"\r",
+									"var extractedName = jsonBody.name;\r",
+									"pm.globals.set(\"globalName\", extractedName);\r",
+									"\r",
+									"var extractedEmail = jsonBody.email;\r",
+									"pm.globals.set(\"globalEmail\", extractedEmail);\r",
+									"\r",
+									"// POSTMAN WORKFLOWS & CONDITIONAL TEST EXECUTION\r",
+									"\r",
+									"if (pm.response.code==201) {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has passed\");\r",
+									"    pm.execution.setNextRequest(\"VERIFY IF USER IS CREATED\");   // let the control goto the next API\r",
+									"}\r",
+									"else {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has failed\");\r",
+									"    pm.execution.setNextRequest(\"\")    // stop the test execution\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{gToken}}"
+							},
+							{
+								"key": "User-Agent",
+								"value": "{{$randomUserAgent}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"{{$randomFirstName}}\",\r\n    \"gender\": \"male\",\r\n    \"email\": \"{{$randomEmail}}\",\r\n    \"status\": \"active\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						},
+						"description": "This is a REST API that uses HTTP method=POST and is used to create new user in the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 201 Created\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if status is active or inactive\n    \n- Verify if gender is either male or female"
+					},
+					"response": []
+				},
+				{
+					"name": "VERIFY IF USER IS CREATED",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify if response code is 200 OK\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response time < 5 seconds\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body is received from server\", function () {\r",
+									"    pm.response.to.have.body();\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body is received in JSON format\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\", \"application/json; charset=utf-8\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body contains fields such as id, name, email, gender, status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"id\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"email\")\r",
+									"    pm.expect(pm.response.text()).to.include(\"gender\")\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\")\r",
+									"});\r",
+									"\r",
+									"// VERIFY IF USER IS CREATED\r",
+									"\r",
+									"pm.test(\"Verify if user is created with name: \"+pm.globals.get(\"globalName\"), function () {\r",
+									"\tvar jsonData = pm.response.json();\r",
+									"\tpm.expect(jsonData[0].name).to.eql(pm.globals.get(\"globalName\"));\r",
+									"});\r",
+									"\r",
+									"// POSTMAN WORKFLOWS & CONDITIONAL TEST EXECUTION\r",
+									"\r",
+									"if (pm.response.code==200) {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has passed\");\r",
+									"    pm.execution.setNextRequest(\"UPDATE THIS CREATED USER\");   // let the control goto the next API\r",
+									"}\r",
+									"else {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has failed\");\r",
+									"    pm.execution.setNextRequest(\"\")    // stop the test execution\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{gToken}}"
+							},
+							{
+								"key": "User-Agent",
+								"value": "{{$randomUserAgent}}"
+							}
+						],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						},
+						"description": "This is a REST API that uses HTTP method=GET and is used to retrieve/read/fetch all the existing users details from the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE THIS CREATED USER",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify if response code is 200 OK\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response time < 5 seconds\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body is received from server\", function () {\r",
+									"    pm.response.to.have.body();\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body is received in JSON format\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\", \"application/json; charset=utf-8\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body contains fields such as id, name, email, gender, status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"id\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"email\")\r",
+									"    pm.expect(pm.response.text()).to.include(\"gender\")\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\")\r",
+									"});\r",
+									"\r",
+									"// API CHAINING CODE\r",
+									"\r",
+									"var jsonBody = pm.response.json();\r",
+									"var extractedName = jsonBody.name;\r",
+									"pm.globals.set(\"globalUpdatedName\", extractedName);\r",
+									"\r",
+									"// POSTMAN WORKFLOWS & CONDITIONAL TEST EXECUTION\r",
+									"\r",
+									"if (pm.response.code==200) {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has passed\");\r",
+									"    pm.execution.setNextRequest(\"VERIFY IF USER IS UPDATED\");   // let the control goto the next API\r",
+									"}\r",
+									"else {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has failed\");\r",
+									"    pm.execution.setNextRequest(\"\")    // stop the test execution\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{gToken}}"
+							},
+							{
+								"key": "User-Agent",
+								"value": "{{$randomUserAgent}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"{{$randomNamePrefix}} {{globalName}}\",\r\n    \"email\": \"{{globalEmail}}\",\r\n    \"status\": \"inactive\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/{{globalID}}",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"{{globalID}}"
+							]
+						},
+						"description": "**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+					},
+					"response": []
+				},
+				{
+					"name": "VERIFY IF USER IS UPDATED",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify if response code is 200 OK\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response time < 5 seconds\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body is received from server\", function () {\r",
+									"    pm.response.to.have.body();\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body is received in JSON format\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\", \"application/json; charset=utf-8\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body contains fields such as id, name, email, gender, status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"id\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"email\")\r",
+									"    pm.expect(pm.response.text()).to.include(\"gender\")\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\")\r",
+									"});\r",
+									"\r",
+									"// VERIFY IF USER IS UPDATED\r",
+									"\r",
+									"pm.test(\"Verify if user is updated with name: \"+pm.globals.get(\"globalUpdatedName\"), function () {\r",
+									"\tvar jsonData = pm.response.json();\r",
+									"\tpm.expect(jsonData[0].name).to.eql(pm.globals.get(\"globalUpdatedName\"));\r",
+									"});\r",
+									"\r",
+									"// POSTMAN WORKFLOWS & CONDITIONAL TEST EXECUTION\r",
+									"\r",
+									"if (pm.response.code==200) {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has passed\");\r",
+									"    pm.execution.setNextRequest(\"DELETE THIS CREATED USER\");   // let the control goto the next API\r",
+									"}\r",
+									"else {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has failed\");\r",
+									"    pm.execution.setNextRequest(\"\")    // stop the test execution\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{gToken}}"
+							},
+							{
+								"key": "User-Agent",
+								"value": "{{$randomUserAgent}}"
+							}
+						],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						},
+						"description": "This is a REST API that uses HTTP method=GET and is used to retrieve/read/fetch all the existing users details from the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE THIS CREATED USER",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify if response code is 204 No Content\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"    pm.response.to.have.status(\"No Content\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response time < 2 seconds\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body is not received from server\", function () {\r",
+									"    pm.response.to.not.have.body();\r",
+									"});\r",
+									"\r",
+									"// POSTMAN WORKFLOWS & CONDITIONAL TEST EXECUTION\r",
+									"\r",
+									"if (pm.response.code==204) {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has passed\");\r",
+									"    pm.execution.setNextRequest(\"VERIFY IF USER IS DELETED\");   // let the control goto the next API\r",
+									"}\r",
+									"else {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has failed\");\r",
+									"    pm.execution.setNextRequest(\"\")    // stop the test execution\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{gToken}}"
+							},
+							{
+								"key": "User-Agent",
+								"value": "{{$randomUserAgent}}"
+							}
+						],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users/{{globalID}}",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users",
+								"{{globalID}}"
+							]
+						},
+						"description": "This is a REST API that uses HTTP method=DELETE and is used to delete existing user details in the server/database.  \n**  \nExpected Result:**\n\n- Verify if response code received from server is 204 No Content\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is not received from server"
+					},
+					"response": []
+				},
+				{
+					"name": "VERIFY IF USER IS DELETED",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify if response code is 200 OK\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"    pm.response.to.have.status(\"OK\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response time < 5 seconds\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(5000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body is received from server\", function () {\r",
+									"    pm.response.to.have.body();\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body is received in JSON format\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\", \"application/json; charset=utf-8\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify if response body contains fields such as id, name, email, gender, status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"id\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"name\");\r",
+									"    pm.expect(pm.response.text()).to.include(\"email\")\r",
+									"    pm.expect(pm.response.text()).to.include(\"gender\")\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\")\r",
+									"});\r",
+									"\r",
+									"// VERIFY IF USER IS DELETED\r",
+									"\r",
+									"pm.test(\"Verify if user is deleted with name: \"+pm.globals.get(\"globalUpdatedName\"), function () {\r",
+									"\tvar jsonData = pm.response.json();\r",
+									"\tpm.expect(jsonData[0].name).to.not.eql(pm.globals.get(\"globalUpdatedName\"));\r",
+									"});\r",
+									"\r",
+									"// POSTMAN WORKFLOWS & CONDITIONAL TEST EXECUTION\r",
+									"\r",
+									"if (pm.response.code==200) {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has passed\");\r",
+									"    pm.execution.setNextRequest(\"\");   // stop the test\r",
+									"}\r",
+									"else {\r",
+									"    console.log(\"The \"+pm.info.requestName+ \" API has failed\");\r",
+									"    pm.execution.setNextRequest(\"\")    // stop the test execution\r",
+									"}"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"user-agent": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{gToken}}"
+							},
+							{
+								"key": "User-Agent",
+								"value": "{{$randomUserAgent}}"
+							}
+						],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						},
+						"description": "This is a REST API that uses HTTP method=GET and is used to retrieve/read/fetch all the existing users details from the server/database\n\n**Expected Result:**\n\n- Verify if response code received from server is 200 OK\n    \n- Verify if response time from server < 5 seconds\n    \n- Verify if response body is received from server\n    \n- Verify if response body received from server is in JSON format\n    \n- Verify if response body contains fields such as id, name, email, gender, status"
+					},
+					"response": []
+				}
+			],
+			"description": "CREATE USER (POST) → VERIFY IF USER IS CREATED (GET) → UPDATE THIS CREATED USER (PATCH) → VERIFY IF USER IS UPDATED (GET) → DELETE THIS CREATED USER (DELETE) → VERIFY IF USER IS DELETED (GET)"
+		}
+	],
+	"variable": [
+		{
+			"key": "cAccessToken",
+			"value": "a1acf13036e08546446ecbcbeb75b11959fbfcc0795218a185cfc982f6982c29"
+		}
+	]
+}
